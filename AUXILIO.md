@@ -1,0 +1,1 @@
+antes de dar el grito en el cielo te aviso que las imagenes puestas en el portafolio son referenciales, es decir los puse para darme una idea de como quedaria, gracias :)

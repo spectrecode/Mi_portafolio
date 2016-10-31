@@ -1,0 +1,214 @@
+/* body */
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background: black;
+	overflow: hidden;
+}
+
+/* intro canvas */
+
+.cajaCanvas{
+	position: absolute;
+    bottom: 0;
+    text-align: center;
+    left: 50%;
+    margin-left: -22px;
+    color: white;
+}
+
+.fadeBotonLoad{
+	animation:uno ease-in 1;
+	animation-duration:3s;
+}
+@keyframes uno { from { opacity:0; } to { opacity:1; } }
+
+.fadeFirst{
+	opacity: 0;
+	transition: opacity 1s;
+}
+
+.fadeInDown{
+	animation:fadeIn ease-in 1;
+	animation-duration:1s;
+}
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.flechaAbajo{
+    display: block;
+    cursor: pointer;
+}
+
+.intro{
+	height: 100vh;
+/*	width: 100%;	
+*/}
+
+/* seccion falsa/ navbar sticky*/
+
+button:focus {
+    outline: none;
+}
+
+.botonCollapse{
+	color: white;
+	float: right;
+}
+
+.container{
+	max-width: 990px;
+}
+
+.falsoSection{
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+}
+
+.navfix{
+	color: white;
+	z-index: 1;
+	width: 100%;
+}
+
+/* menu fixed*/
+
+[class^="flaticon-"]:before{
+	margin: 0;
+}
+
+.gatoIcon{
+	color: white;
+	float: right;
+	padding: 18px 2px;
+}
+
+.menu{
+    color: white;
+    position: absolute;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+}
+
+.menuBox{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(23, 27, 33, 0.66);
+    top: 0;
+    z-index: 999;
+}
+
+/* primera seccion */
+
+h1{
+	font-size: 330%;
+}
+
+.jumbo{
+	position: relative;
+	top: 28%;
+	background-color: transparent;
+	color: white;
+}
+
+.primerSlid{
+	background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, -0.7));
+	width: 100%;
+	position: relative;
+	height: 100vh;
+}
+
+@media (max-width: 780px){
+	.primerSlid{
+		background:linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, -0.3)), url(../img/porfavor.jpg);
+		background-size: cover;
+		background-position: center;
+	}
+}
+
+.videoPlay{
+    position: fixed;
+    z-index: -1;
+    width: 100%;
+}
+
+/* segundo section*/
+
+.aboutMe{
+    bottom: 280px;
+    position: relative;
+}
+
+.colDer{
+	padding-left: 10%;
+	padding-top: 17%;
+}
+
+.colIzq, .colDer{
+	opacity: 0;
+}
+.colIzq{
+	padding-right: 10%;
+	padding-top: 3%;
+}
+
+.ego{
+	position: relative;
+	top: 340px;
+}
+
+.nombre{
+	color: #19e8e0;
+    text-shadow: 0px 0px 30px #f5f4f5;
+    font-size: 180%;
+}
+
+.segundoSlid{
+	background-color: #222831;
+	color: #00FFF5;
+}
+
+.segundoSlid,.tercerSlid,.cuartoSlid,.quintoSlid {
+	height: 100vh;
+	position: relative;
+
+}
+
+@media screen and (min-width: 0px) and (max-width: 544px) {
+    [class*="colIzq"] {
+        padding: 20px 80px 0;
+    }
+    [class*="colDer"] {
+        padding: 30px 55px 0;    	
+    }
+}
+
+/* tercer section */
+
+.tercerSlid{
+	background-color: #00ADB5;
+}
+
+/* cuarto section */
+
+.cuartoSlid{
+	background-color: #EFCB68;
+}
+
+/* quinto section */
+
+.quintoSlid{
+	background-color: #160C28;
+}
+
+.hoverAuto{
+	opacity: 0;
+    transition: opacity .6s cubic-bezier(0.645,.045,.355,1);
+}
+
