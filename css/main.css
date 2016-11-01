@@ -7,18 +7,22 @@
 
 body{
 	background: black;
-	overflow: hidden;
+	/*overflow: hidden;*/
 }
 
 /* intro canvas */
 
-.cajaCanvas{
+.cajaCanvas, .cajaUp{
 	position: absolute;
+    z-index: 1;
+    left: 49%;
+    cursor: pointer;
+}
+
+.cajaCanvas{
     bottom: 0;
-    text-align: center;
-    left: 50%;
-    margin-left: -22px;
-    color: white;
+    /* text-align: center; */
+    /* margin-left: -22px; */
 }
 
 .fadeBotonLoad{
@@ -40,7 +44,15 @@ body{
 
 .flechaAbajo{
     display: block;
-    cursor: pointer;
+    color: white;
+}
+
+.cajaCanvas a:hover{
+	color: transparent;
+}
+
+.flaticon-devon-rex-cat{
+	margin-left: -5px;
 }
 
 .intro{
@@ -70,6 +82,7 @@ button:focus {
 }
 
 .navfix{
+	position: fixed;
 	color: white;
 	z-index: 1;
 	width: 100%;
@@ -138,11 +151,15 @@ h1{
     width: 100%;
 }
 
-/* segundo section*/
+/* segundo section / cajaUp */
 
 .aboutMe{
     bottom: 280px;
     position: relative;
+}
+
+.cajaUp{
+    top: 0;
 }
 
 .colDer{
@@ -163,10 +180,18 @@ h1{
 	top: 340px;
 }
 
+.flechaArriba{
+	color: white;
+}
+
 .nombre{
 	color: #19e8e0;
     text-shadow: 0px 0px 30px #f5f4f5;
     font-size: 180%;
+}
+
+.t-up{
+	position: absolute;
 }
 
 .segundoSlid{
@@ -174,7 +199,7 @@ h1{
 	color: #00FFF5;
 }
 
-.segundoSlid,.tercerSlid,.cuartoSlid,.quintoSlid {
+.segundoSlid,.tercerSlid,.quintoSlid {
 	height: 100vh;
 	position: relative;
 
@@ -191,6 +216,10 @@ h1{
 
 /* tercer section */
 
+.skills{
+	padding: 17% 28%;
+}
+
 .tercerSlid{
 	background-color: #00ADB5;
 }
@@ -199,6 +228,9 @@ h1{
 
 .cuartoSlid{
 	background-color: #EFCB68;
+	position: relative;
+	height: 100vh;
+	overflow-y: auto;
 }
 
 /* quinto section */

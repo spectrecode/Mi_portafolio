@@ -3,20 +3,49 @@
 $(document).ready(function () {
     $(".botonCollapse").click(function () {
         $(".collapse").fadeToggle(500);
+    // $("#primerSlid").click(function () {
+    //     $(".collapse").fadeToggle(500);    
         // $(".top-menu").toggleClass("top-animate");
         // $(".mid-menu").toggleClass("mid-animate");
         // $(".bottom-menu").toggleClass("bottom-animate");
     });
 
-    $("li.voce-menu a").click(function () {
+    $("li a").click(function () {
         $(".collapse").fadeToggle(500);
         // $(".top-menu").fadeToggle("top-animate");
-    //     // $(".mid-menu").toggleClass("mid-animate");
-    //     // $(".bottom-menu").toggleClass("bottom-animate");
+        // $(".mid-menu").toggleClass("mid-animate");
+        // $(".bottom-menu").toggleClass("bottom-animate");
     });
 });
 
+// menu dirige section
+
+// $(document).ready(function() {
+//     $("#primero").click(function() {
+//         $("#remover").fadeToggle();
+//     })
+// })
+
 // slider section
+
+
+// $(document).ready(function () {
+//     $(".flechaArriba").click(function () {
+//         $(".collapse").fadeToggle(500);
+//     // $("#primerSlid").click(function () {
+//     //     $(".collapse").fadeToggle(500);    
+//         // $(".top-menu").toggleClass("top-animate");
+//         // $(".mid-menu").toggleClass("mid-animate");
+//         // $(".bottom-menu").toggleClass("bottom-animate");
+//     });
+
+//     // $("li a").click(function () {
+//     //     $(".collapse").fadeToggle(500);
+//     //     $(".top-menu").fadeToggle("top-animate");
+//     //     $(".mid-menu").toggleClass("mid-animate");
+//     //     $(".bottom-menu").toggleClass("bottom-animate");
+//     // });
+// });
 
 $(document).ready(function(){
     $("#first").click(function(){
@@ -24,23 +53,23 @@ $(document).ready(function(){
     });
 })
 
-$(document).ready(function(){
-    $("#second").click(function(){
-        $(".primerSlid").slideUp(800);
-    });
-})
+// $(document).ready(function(){
+//     $("#second").click(function(){
+//         $(".primerSlid").slideUp(800);
+//     });
+// })
 
-$(document).ready(function(){
-    $("#thirt").click(function(){
-        $(".segundoSlid").slideUp(1200);
-    });
-})
+// $(document).ready(function(){
+//     $("#thirt").click(function(){
+//         $(".segundoSlid").slideUp(1200);
+//     });
+// })
 
-$(document).ready(function(){
-    $("#forth").click(function(){
-        $(".tercerSlid").slideUp(1200);
-    });
-})
+// $(document).ready(function(){
+//     $("#forth").click(function(){
+//         $(".tercerSlid").slideUp(1200);
+//     });
+// })
 
 // hover iconos gatos
 
